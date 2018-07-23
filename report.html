@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        html {background-color: antiquewhite; }
+		h2 {text-align: center;}
+		label {
+            
+            font-style: oblique;
+        	}
+		a:link, a:visited {text-decoration: none;}
+		a:hover {color: crimson;}
+		#bigButton {border: solid; font: bold; background-color: black; color: white; padding: 5px;display: inline-block; text-align: center;}
+	</style>
+	
+</head>
+	<title>Report Selection</title>
+		<body>
+			<form action="reportDetails.php" method="post">
+				<label>Enter Start Date:</label>
+					<input type="date" name="startDate" required>
+				<br>
+				<label>Enter End Date:</label>
+					<input type="date" name="endDate" required>
+				<br>
+				<label>Shopper:</label>
+				   <select name="theShopper" required>
+				    <option value="Ned Stagg">Ned</option>
+                    <option value="Fabiola Stagg">Fabi</option>
+                    <option value="Daniel Hernandez">Daniel</option>
+                    <option value="Ali Eskandari">Ali</option>
+                    <option value="Darren Lassiter">Darren</option>
+                    <option value="Jason McCoy">Jason</option>
+                    <option value="Letty Martinez">Letty</option>
+                    <option value="Patty Ruiz">Patty</option>
+                    <option value="Richard Ainsworth">Richard</option>
+                    <option value="Toni Brown">Toni</option>
+					<option value="George McClure">George</option>
+					<option value="GM">Restaurant Manager</option>
+					<option value="Sups">All Sups</option>
+                    <option value="Other">Other</option>
+                </select><br>
+				   
+				
+				
+				<label>Report by Store, Supervisor, Operations Manager or Organization?</label>
+					<select name="scope" required>
+					   <option value="Store">Store</option>
+					   <option value="Supervisor">Supervisor</option>
+					   <option value="Operations Manager">Operations Manager</option>
+					   <option value="Organization">Organization</option>
+					</select>
+				<br>
+				<input id="bigButton" type="submit" value="Send Parameters">
+			</form>
+		</body>
+			
+  
+			
+
+</html>
+
